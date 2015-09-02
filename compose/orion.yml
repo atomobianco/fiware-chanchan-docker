@@ -17,6 +17,6 @@ orion:
     image: bitergia/fiware-orion:develop
     links:
         - mongodb
-    expose:
-        - "1026"
+    ports:
+        - "1026:1026"
     command: -dbhost mongodb
